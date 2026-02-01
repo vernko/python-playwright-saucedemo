@@ -12,8 +12,8 @@ def test_products_are_displayed(authenticated_page: Page):
 
 def test_problem_user_can_login(problem_user_page: Page):
     """Test that a problem_user fixture logs in successfully"""
-    expect(problem_user_page.locator(INVENTORY_TITLE).first).to_have_text("Products")
+    expect(problem_user_page.locator(INVENTORY_TITLE)).to_have_text("Products")
 
 def test_performance_glitch_user_can_login(performance_glitch_user_page: Page):
     """Test that a problem_user fixture logs in successfully"""
-    expect(performance_glitch_user_page.locator(INVENTORY_TITLE).first).to_have_text("Products")
+    expect(performance_glitch_user_page.locator(INVENTORY_TITLE)).to_have_text("Products")

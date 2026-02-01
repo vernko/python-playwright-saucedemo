@@ -5,6 +5,7 @@ These fixtures automatically log in users before tests run.
 
 import pytest
 from playwright.sync_api import Page, expect
+from typing import Generator
 from tests.helpers.constants import (
     LOGIN_URL,
     INVENTORY_URL,
@@ -19,7 +20,7 @@ from tests.helpers.constants import (
 )
 
 @pytest.fixture
-def authenticated_page(page: Page) -> Page:
+def authenticated_page(page: Page) -> Generator[Page, None, None]:
     """
     Fixture that provides a page with standard_user already logged in.
 
@@ -42,7 +43,7 @@ def authenticated_page(page: Page) -> Page:
     yield page
 
 @pytest.fixture
-def problem_user_page(page: Page) -> Page:
+def problem_user_page(page: Page) -> Generator[Page, None, None]:
     """
     Fixture that provides a page with a problem_user (potential broken images & wrong products) logged in.
 
@@ -65,7 +66,7 @@ def problem_user_page(page: Page) -> Page:
     yield page
 
 @pytest.fixture
-def performance_glitch_user_page(page: Page) -> Page:
+def performance_glitch_user_page(page: Page) -> Generator[Page, None, None]:
     """
     Fixture that provides a page with a performance_glitch_user (intentionally slow) logged in.
 
