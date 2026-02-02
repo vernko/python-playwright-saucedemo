@@ -30,6 +30,8 @@ CART_ITEM = ".cart_item"
 CHECKOUT_BUTTON = "#checkout"
 CONTINUE_SHOPPING = "#continue-shopping"
 REMOVE_BUTTON = "[data-test^='remove']"
+ADD_TO_CART_BUTTON = "[data-test^='add-to-cart']"
+CART_LINK = ".shopping_cart_link"
 
 # Test Users
 STANDARD_USER = "standard_user"

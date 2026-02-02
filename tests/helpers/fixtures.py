@@ -26,7 +26,7 @@ def authenticated_page(page: Page) -> Generator[Page, None, None]:
 
     Usage:
         def test_something(authenticated_page):
-            # Page is already on inventory page, loggin in
+            # Page is already on inventory page, logged in
             authenticated_page.locator(".some-element").click()
 
         Yields:
