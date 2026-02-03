@@ -1,5 +1,7 @@
 # Python Playwright - SauceDemo Test Suite
 
+![Playwright Tests](https://github.com/vernko/python-playwright-saucedemo/actions/workflows/playwright.yml/badge.svg)
+
 Automated testing suite for SauceDemo e-commerce site using Python and Playwright, focusing on authentication flows and user role testing.
 
 ## Setup
@@ -25,6 +27,16 @@ uv run pytest tests/test_login.py -v
 # Run in headed mode
 uv run pytest --headed
 ```
+
+## CI/CD
+
+This project uses GitHub Actions to automatically run tests on every push and pull request.
+
+- Tests run on: Ubuntu Latest
+- Python version: 3.12
+- Browsers: Chromium, Firefox, WebKit (headless)
+
+View test results in the [Actions tab](https://github.com/vernko/python-playwright-saucedemo/actions).
 
 ## Project Structure
 ```
