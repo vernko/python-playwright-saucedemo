@@ -33,9 +33,24 @@ REMOVE_BUTTON = "[data-test^='remove']"
 ADD_TO_CART_BUTTON = "[data-test^='add-to-cart']"
 CART_LINK = ".shopping_cart_link"
 
+# Selectors - Checkout (add to your existing selectors)
+FIRST_NAME_INPUT = "[data-test='firstName']"
+LAST_NAME_INPUT = "[data-test='lastName']"
+ZIP_CODE_INPUT = "[data-test='postalCode']"
+CONTINUE_BUTTON = "[data-test='continue']"
+FINISH_BUTTON = "[data-test='finish']"
+CANCEL_BUTTON = "[data-test='cancel']"
+CHECKOUT_COMPLETE_HEADER = ".complete-header"
+CHECKOUT_ERROR = "[data-test='error']"
+
 # Test Users
 STANDARD_USER = "standard_user"
 STANDARD_PASSWORD = "secret_sauce"
 LOCKED_OUT_USER = "locked_out_user"
 PROBLEM_USER = "problem_user"
 PERFORMANCE_GLITCH_USER = "performance_glitch_user"
+
+# Test checkout data
+TEST_FIRST_NAME = "John"
+TEST_LAST_NAME = "Doe"
+TEST_ZIP_CODE = "12345"
