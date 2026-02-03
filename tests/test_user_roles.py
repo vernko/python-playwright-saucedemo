@@ -3,7 +3,6 @@ Tests for different user role behaviors.
 Tests locked_out_user, problem_user, and performance_glitch_user.
 """
 
-import pytest
 from playwright.sync_api import Page, expect
 from tests.helpers.constants import (
     LOGIN_URL,

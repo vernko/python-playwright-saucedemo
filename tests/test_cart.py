@@ -3,21 +3,14 @@ Tests for shopping cart functionality.
 Tests adding items, removing items, and cart state.
 """
 
-import pytest
 from playwright.sync_api import Page, expect
 from tests.helpers.constants import (
-    PRODUCT_ITEM,
     CART_BADGE,
     CART_ITEM,
     CART_LINK,
-    ADD_TO_CART_BUTTON,
     REMOVE_BUTTON,
 )
-
-def add_item_to_cart(authenticated_page: Page, index: int = 0):
-    product = authenticated_page.locator(PRODUCT_ITEM).nth(index)
-    expect(product).to_be_visible()
-    product.locator(ADD_TO_CART_BUTTON).click()
+from tests.helpers.helpers import add_item_to_cart
 
 def test_add_item_to_cart(authenticated_page: Page):
     """Test adding a product to the cart"""

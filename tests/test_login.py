@@ -1,4 +1,8 @@
-import pytest
+"""
+Tests for login flow.
+Tests valid and invalid login.
+"""
+
 from playwright.sync_api import Page, expect
 from tests.helpers.constants import (
     LOGIN_URL,

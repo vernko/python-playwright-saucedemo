@@ -1,4 +1,3 @@
-import pytest
 from playwright.sync_api import Page, expect
 from tests.helpers.constants import (INVENTORY_TITLE, PRODUCT_ITEM)
 
